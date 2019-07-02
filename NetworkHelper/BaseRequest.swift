@@ -11,7 +11,7 @@ import Alamofire
 
 public typealias HTTPMethod = Alamofire.HTTPMethod
 
-class BaseRequest: NSObject {
+public class BaseRequest: NSObject {
     
     let config: ConfigManager
     

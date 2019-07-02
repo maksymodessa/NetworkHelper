@@ -10,15 +10,15 @@ import ObjectMapper
 
 public typealias Map = ObjectMapper.Map
 
-class BaseResponse: Mappable {
+public class BaseResponse: Mappable {
     
     var rawValue: [String: Any]?
     var errors: [BaseResponseError]?
     
-    required init?(map: Map){
+    public required init?(map: Map){
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         rawValue = map.JSON
         
         errors <- map["errors"]
