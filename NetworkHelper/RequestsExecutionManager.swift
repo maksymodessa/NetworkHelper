@@ -40,12 +40,12 @@ public class RequestsExecutionManager {
     
     public init() {}
     
-    func createRequest<T:BaseRequest>(with config: ConfigManager) -> T {
+    public func createRequest<T:BaseRequest>(with config: ConfigManager) -> T {
         let request = T(config: config)
         return request
     }
     
-    func executeRequest<T:BaseResponse>(
+    public func executeRequest<T:BaseResponse>(
         _ request: BaseRequest,
         completion: @escaping(Response<T>)->Void)
     {
