@@ -38,6 +38,8 @@ enum Response<Value> {
 
 public class RequestsExecutionManager {
     
+    public init() {}
+    
     func createRequest<T:BaseRequest>(with config: ConfigManager) -> T {
         let request = T(config: config)
         return request
