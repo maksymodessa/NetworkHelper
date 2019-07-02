@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-enum Response<Value> {
+public enum Response<Value> {
     case success(Value?)
     case failure(Error?)
     

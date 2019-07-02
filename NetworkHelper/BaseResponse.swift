@@ -24,11 +24,11 @@ public class BaseResponse: Mappable {
         errors <- map["errors"]
     }
     
-    class BaseResponseError: BaseResponse {
+    public class BaseResponseError: BaseResponse {
         var description: String?
         var errorCode: Int?
         
-        override func mapping(map: Map) {
+        override public func mapping(map: Map) {
             rawValue = map.JSON
             
             description <- map["description"]

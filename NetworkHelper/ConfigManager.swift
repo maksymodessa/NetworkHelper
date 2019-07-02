@@ -8,6 +8,6 @@
 
 import Foundation
 
-class ConfigManager {
+public class ConfigManager {
     
 }
